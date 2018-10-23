@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/adler/Desktop/XML/src/java/Crawler/BaseCrawler.java</file>
+            <file>file:/C:/Users/adler/Desktop/XML/src/java/DAO/BaseDAO.java</file>
+            <file>file:/C:/Users/adler/Desktop/XML/src/java/DAO/IGenericDAO.java</file>
+            <file>file:/C:/Users/adler/Desktop/XML/src/java/Crawler/MybossCategoriesCrawler.java</file>
+            <file>file:/C:/Users/adler/Desktop/XML/src/java/Thread/MybossThread.java</file>
+            <file>file:/C:/Users/adler/Desktop/XML/src/java/Utilities/DBUtilities.java</file>
+            <file>file:/C:/Users/adler/Desktop/XML/src/java/Thread/BaseThread.java</file>
+            <file>file:/C:/Users/adler/Desktop/XML/src/java/Crawler/MybossCrawler.java</file>
+            <file>file:/C:/Users/adler/Desktop/XML/src/java/Crawler/MybossEachPageCrawler.java</file>
+            <file>file:/C:/Users/adler/Desktop/XML/src/java/Constant/AppConstant.java</file>
+        </group>
+    </open-files>
+</project-private>
