@@ -6,13 +6,21 @@
 package DAO;
 
 import java.io.Serializable;
+import java.lang.reflect.ParameterizedType;
 import java.util.List;
 
 /**
  *
  * @author adler
  */
-public class BaseDAO<T, PK extends Serializable> implements IGenericDAO<T, PK>{
+public class BaseDAO<T, PK extends Serializable> implements IGenericDAO<T, PK> {
+
+    protected Class<T> entityClass;
+
+    public BaseDAO() {
+        ParameterizedType genericSuperClass = (ParameterizedType) getClass().getGenericSuperclass();
+        this.entityClass = (Class<T>) genericSuperClass.getActualTypeArguments()[0];        
+    }
 
     @Override
     public List<T> getAll(String namedQuery) {
@@ -38,5 +46,5 @@ public class BaseDAO<T, PK extends Serializable> implements IGenericDAO<T, PK>{
     public boolean delete(T t) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
 }
