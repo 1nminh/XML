@@ -7,7 +7,9 @@ package Utilities;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.persistence.PersistenceContext;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 
 /**
  *
@@ -24,12 +26,12 @@ public class DBUtilities {
         synchronized (LOCK) {
             if (emf == null) {
                 try {
-                    emf = PersistenceContext.createEntityManagerFactory("TPGamingGearPU");                   
+                    emf = Persistence.createEntityManagerFactory("TPGamingGearPU");
                 } catch (Exception e) {
                     Logger.getLogger(DBUtilities.class.getName()).log(Level.SEVERE, null, e);
                 }
             }
         }
-        return emf.createEntityManagerFactory;
+        return emf.createEntityManager();
     }
 }

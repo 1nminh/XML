@@ -5,6 +5,7 @@
  */
 package Crawler;
 
+import Entities.TblCategory;
 import Thread.BaseThread;
 import java.io.BufferedReader;
 import java.io.IOException;

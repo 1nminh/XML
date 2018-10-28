@@ -6,6 +6,8 @@
 package Crawler;
 
 import Constant.AppConstant;
+import Entities.TblCategory;
+import Entities.TblProduct;
 import Thread.BaseThread;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -130,7 +132,7 @@ public class MybossEachPageCrawler extends BaseCrawler implements Runnable {
                     try {
                         price = price.replaceAll("\\D+", "");
                         BigInteger realPrice = new BigInteger(price);
-                        String categoryId = this.category.getCategoryId();
+                        String categoryId = this.category.getCategoryID();
                         TblProduct product = new TblProduct(new Long(1), productName, realPrice, 
                                 imgLink, categoryId, true,
                         AppConstant.domainMyboss);
